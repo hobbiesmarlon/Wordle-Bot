@@ -1,4 +1,4 @@
-# Auto Wordle Bot
+# Wordle Bot
 
 This project is a bot that automatically plays the Wordle game using Selenium.
 
