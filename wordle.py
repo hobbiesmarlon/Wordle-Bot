@@ -96,24 +96,32 @@ def input_word_and_get_feedback(driver, word, tries):
 # Function to filter words list based on feedback
 def filter_words(words, guess, feedback):
     filtered_words = []
+    
     for word in words:
+        letter_counts = defaultdict(int)
+        for letter in guess:
+            letter_counts[letter] += 1
+
         match = True
         for i, (letter, fb) in enumerate(zip(guess, feedback)):
             if fb == 'correct':
                 if word[i] != letter:
                     match = False
                     break
+                letter_counts[letter] -= 1
             elif fb == 'present':
-                if letter not in word or word[i] == letter:
+                if letter not in word or word[i] == letter or letter_counts[letter] <= 0:
                     match = False
                     break
+                letter_counts[letter] -= 1
             elif fb == 'absent':
-                if letter in word:
+                if word.count(letter) > guess.count(letter) - (letter_counts[letter] - word[:i].count(letter)):
                     match = False
                     break
+
         if match:
             filtered_words.append(word)
-        words
+
     return filtered_words
 
 
