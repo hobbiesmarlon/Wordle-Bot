@@ -66,6 +66,13 @@ This project is a bot that automatically plays the Wordle game using Selenium.
 - `possible_words.txt`: A file containing a list of words that can be the target word.
 - `allowed_words.txt`: A file containing a list of words that are accepted as guesses but not all can be the target word.
 
+## Gallery
+
+
+https://github.com/hobbiesmarlon/Wordle-Bot/assets/172140958/500abdbb-0a6b-424f-bdc1-74dc68efe450
+
+
+
 ## License
 
 This project is not licensed and is provided as-is, without any warranty. You are free to use, modify, and distribute the code for personal use only. Commercial use or redistribution without permission is prohibited.
