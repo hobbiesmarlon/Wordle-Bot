@@ -69,7 +69,7 @@ This project is a bot that automatically plays the Wordle game using Selenium.
 ## Gallery
 
 
-https://github.com/hobbiesmarlon/Wordle-Bot/assets/172140958/500abdbb-0a6b-424f-bdc1-74dc68efe450
+https://github.com/hobbiesmarlon/Wordle-Bot/assets/172140958/c0dea8a9-1ee9-41da-aa71-f43bdb0a92c7
 
 
 
